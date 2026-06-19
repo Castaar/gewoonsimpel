@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h1>Gewuujn simpel</h1>",
+            "text": "<h1>Een persoonlijk verhaal met impact</h1>",
             "width": "100%",
             "max_width": "normal",
             "max_width_custom": "600",
