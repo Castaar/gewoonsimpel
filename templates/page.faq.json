@@ -579,8 +579,8 @@
         "background_color": "",
         "icons_style": "arrow",
         "icons_shape": "none",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 50,
+        "padding-block-end": 50
       }
     }
   },
