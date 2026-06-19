@@ -269,11 +269,32 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "button_fV4THj": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Meer over onze missie en visie",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "{{ settings.color_palette.background }}",
+                "custom_button_text": "{{ settings.color_palette.foreground }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100,
+                "custom_css": "border-radius: 20px !important;\ntext-transform: uppercase;\npadding: 10px 20px;\nfont-family: var(--gs-font-heading) !important;\nfont-size: 18px;"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "heading_eenvoud",
-            "body_eenvoud"
+            "body_eenvoud",
+            "button_fV4THj"
           ]
         }
       },
@@ -369,10 +390,10 @@
               "type": "button",
               "name": "Button",
               "settings": {
-                "label": "MEER OVER ONS",
+                "label": "Meer over ons",
                 "link": "/pages/over-ons",
                 "open_in_new_tab": false,
-                "style_class": "secondary",
+                "style_class": "button-custom",
                 "custom_button_background": "{{ settings.color_palette.foreground }}",
                 "custom_button_text": "{{ settings.color_palette.background }}",
                 "custom_button_border": "{{ settings.color_palette.background }}",
@@ -381,7 +402,7 @@
                 "custom_width": 100,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100,
-                "custom_css": ""
+                "custom_css": "border-radius: 20px !important;\ntext-transform: uppercase;\npadding: 10px 20px;\nfont-family: var(--gs-font-heading) !important;\nfont-size: 18px;"
               },
               "blocks": {}
             }
@@ -491,9 +512,9 @@
               "type": "_product-list-button",
               "name": "Button",
               "settings": {
-                "label": "NAAR DE WEBSHOP",
+                "label": "Naar de webshop",
                 "open_in_new_tab": false,
-                "style_class": "primary",
+                "style_class": "button-custom",
                 "custom_button_background": "{{ settings.color_palette.foreground }}",
                 "custom_button_text": "{{ settings.color_palette.background }}",
                 "custom_button_border": "{{ settings.color_palette.background }}",
@@ -502,7 +523,7 @@
                 "custom_width": 100,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100,
-                "custom_css": ""
+                "custom_css": "border-radius: 20px !important;\ntext-transform: uppercase;\npadding: 10px 20px;\nfont-family: var(--gs-font-heading) !important;\nfont-size: 18px;"
               },
               "blocks": {}
             }
