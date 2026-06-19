@@ -42,7 +42,9 @@
       "block_order": [
         "text_kqg43m"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".hero-wrapper {margin: 100px auto; max-width: 1240px;}"
+      ],
       "name": "Hero",
       "settings": {
         "media_type_1": "image",
