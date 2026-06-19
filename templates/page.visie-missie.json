@@ -248,11 +248,37 @@
     "section_UUH6dM": {
       "type": "section",
       "blocks": {
+        "text_H7kMn9": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Onze missie</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "text_ULxnDg": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Wat begon als het persoonlijke verhaal van Tim en zijn familie, groeide uit tot een VZW die eenvoud en verbondenheid wil vertalen naar concrete acties rond hersenkanker. Dit door gewuujn simpel in het leven te staan en zorg te dragen voor elkaar. </p>",
+            "text": "<p>Gewoon Simpel VZW zet zich in om onderzoek naar hersenkanker in België te ondersteunen. Daarnaast is ook het psychosociale welzijn van neuropatiënten en hun naaste omgeving een belangrijke pijler. <br/><br/>Hoe? Via betekenisvolle “F*ckt up” good merchandising die vertrekt<br/> vanuit Tim zijn levensfilosofie.  </p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -273,31 +299,11 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "button_4FYf8d": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Ontdek onze “F*ckt up” good merchandising",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-custom",
-            "custom_button_background": "{{ settings.color_palette.foreground }}",
-            "custom_button_text": "{{ settings.color_palette.background }}",
-            "custom_button_border": "{{ settings.color_palette.background }}",
-            "link_text_color": "",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100,
-            "custom_css": "border-radius: 20px !important;\ntext-transform: uppercase;\npadding: 10px 20px;\nfont-family: var(--gs-font-heading) !important;\nfont-size: 18px;"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "text_ULxnDg",
-        "button_4FYf8d"
+        "text_H7kMn9",
+        "text_ULxnDg"
       ],
       "name": "t:names.custom_section",
       "settings": {
@@ -308,12 +314,12 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 50,
+        "gap": 20,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
         "background_media": "none",
-        "background_color": "",
+        "background_color": "{{ settings.color_palette.foreground }}",
         "video_position": "cover",
         "background_image_position": "cover",
         "toggle_overlay": false,
