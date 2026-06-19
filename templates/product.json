@@ -464,7 +464,7 @@
                 "accordion_row_TLNCmE": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Productie",
+                    "heading": "Maattabel",
                     "open_by_default": false,
                     "icon": "none",
                     "width": 20
@@ -473,7 +473,7 @@
                     "text_yrMjXR": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Onze producten worden zowel lokaal als wereldwijd geproduceerd. We selecteren onze productiepartners zorgvuldig om ervoor te zorgen dat onze producten van hoge kwaliteit zijn en een eerlijke prijs hebben.</p>",
+                        "text": "{{ closest.product.metafields.custom.size_guide | metafield_tag }}",
                         "width": "100%",
                         "max_width": "normal",
                         "max_width_custom": "600",
