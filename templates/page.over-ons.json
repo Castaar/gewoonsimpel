@@ -87,7 +87,7 @@
             "text": "<p>Gewoon Simpel VZW is een initiatief van familie van Tim, opgericht om zijn levensfilosofie verder te laten leven en tegelijk iets in beweging te zetten rond hersenkanker.</p>",
             "width": "100%",
             "max_width": "custom",
-            "max_width_custom": "800",
+            "max_width_custom": "710",
             "alignment": "center",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
