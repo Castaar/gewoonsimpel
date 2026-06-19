@@ -169,7 +169,8 @@
           "settings": {
             "image": "shopify://shop_images/StanleyStella_EDITO_SS24_TIMELESS_ICONICS2_0__GROUP.jpg",
             "link": "",
-            "image_ratio": "landscape",
+            "image_ratio": "custom",
+            "custom_image_ratio": "961 / 503",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -192,7 +193,8 @@
           "name": "t:names.image",
           "settings": {
             "link": "",
-            "image_ratio": "landscape",
+            "image_ratio": "custom",
+            "custom_image_ratio": "961 / 503",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -344,6 +346,7 @@
           "settings": {
             "link": "",
             "image_ratio": "adapt",
+            "custom_image_ratio": "1 / 1",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -367,6 +370,7 @@
           "settings": {
             "link": "",
             "image_ratio": "adapt",
+            "custom_image_ratio": "1 / 1",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
