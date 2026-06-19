@@ -67,7 +67,7 @@
           "blocks": {}
         },
         "contact_form_BrJFwy": {
-          "type": "contact-form",
+          "type": "faq-form",
           "settings": {
             "width": "custom",
             "custom_width": 50,
@@ -87,7 +87,7 @@
           },
           "blocks": {
             "submit-button": {
-              "type": "contact-form-submit-button",
+              "type": "faq-form-submit-button",
               "static": true,
               "settings": {
                 "label": "Verzenden",
