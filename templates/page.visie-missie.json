@@ -338,16 +338,17 @@
         "padding-block-end": 100
       }
     },
-    "section_9tgTTH": {
+    "section_8rzF3b": {
       "type": "section",
       "blocks": {
-        "image_b4PLjJ": {
+        "image_MzYjzD": {
           "type": "image",
           "name": "t:names.image",
           "settings": {
+            "image": "shopify://shop_images/StanleyStella_EDITO_SS24_TIMELESS_ICONICS2_0__GROUP.jpg",
             "link": "",
-            "image_ratio": "adapt",
-            "custom_image_ratio": "1 / 1",
+            "image_ratio": "custom",
+            "custom_image_ratio": "961 / 503",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -365,13 +366,14 @@
           },
           "blocks": {}
         },
-        "image_QniLAQ": {
+        "image_dDHmkR": {
           "type": "image",
           "name": "t:names.image",
           "settings": {
+            "image": "shopify://shop_images/StanleyStella_EDITO_SS24_TIMELESS_ICONICS2_0__GROUP.jpg",
             "link": "",
-            "image_ratio": "adapt",
-            "custom_image_ratio": "1 / 1",
+            "image_ratio": "custom",
+            "custom_image_ratio": "961 / 503",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -391,8 +393,8 @@
         }
       },
       "block_order": [
-        "image_b4PLjJ",
-        "image_QniLAQ"
+        "image_MzYjzD",
+        "image_dDHmkR"
       ],
       "name": "t:names.custom_section",
       "settings": {
@@ -585,7 +587,7 @@
     "section_xKpwbg",
     "section_cTt9hE",
     "section_UUH6dM",
-    "section_9tgTTH",
+    "section_8rzF3b",
     "cta_contact"
   ]
 }
