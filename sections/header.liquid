@@ -1,8 +1,8 @@
 {% liquid
-  assign order = 'logo,menu,localization,search,drawer_search,menu_right,actions'
+  assign order = 'logo,menu,menu_right,localization,search,drawer_search,actions'
 
   if shop.customer_accounts_enabled
-    assign order = 'drawer_search,logo,menu,localization,search,menu_right,actions'
+    assign order = 'drawer_search,logo,menu,menu_right,localization,search,actions'
   endif
 
   assign rows = 'top,bottom' | split: ','
@@ -120,9 +120,9 @@
       endif
     else
       if shop.customer_accounts_enabled
-        assign order = 'drawer_search,logo,localization,menu,search,menu_right,actions'
+        assign order = 'drawer_search,logo,localization,menu,menu_right,search,actions'
       else
-        assign order = 'logo,localization,menu,search,drawer_search,menu_right,actions'
+        assign order = 'logo,localization,menu,menu_right,search,drawer_search,actions'
       endif
     endif
   else
