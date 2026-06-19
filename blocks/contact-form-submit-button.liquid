@@ -10,6 +10,14 @@
   {{ block_settings.label }}
 </button>
 
+{% if block_settings.custom_css != blank %}
+  {% style %}
+    .{{ block_settings.style_class }}--{{ block.id }} {
+      {{ block_settings.custom_css }}
+    }
+  {% endstyle %}
+{% endif %}
+
 {% stylesheet %}
   .submit-button {
     min-width: max-content;
@@ -134,6 +142,16 @@
       "unit": "%",
       "default": 100,
       "visible_if": "{{ block.settings.width_mobile == 'custom' }}"
+    },
+    {
+      "type": "header",
+      "content": "Custom CSS"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS",
+      "info": "Scoped to this button. Write plain declarations (border-radius: 999px;) or nested rules (span { color: red; })."
     }
   ],
   "presets": []
