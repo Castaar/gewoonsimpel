@@ -9,101 +9,137 @@
  */
 {
   "sections": {
-    "media_with_content_LeJBGk": {
-      "type": "media-with-content",
+    "section_Kg4yYW": {
+      "type": "section",
       "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "static": true,
+        "text_ByVPnP": {
+          "type": "text",
+          "name": "t:names.heading",
           "settings": {
-            "media_type": "image",
-            "link": "",
-            "video_loop": true,
-            "video_autoplay": false,
-            "image_position": "cover",
-            "video_position": "cover"
+            "text": "<h1>Veelgestelde vragen</h1>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "max_width_custom": "600",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
-        "content": {
-          "type": "_content-without-appearance",
-          "static": true,
+        "text_WEgLbJ": {
+          "type": "text",
+          "name": "t:names.text",
           "settings": {
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 24
+            "text": "<p>Heb je vragen over onze merchandise, ideeën of wil je samenwerken met <br/>Gewoon Simpel? Laat het ons gerust weten via onderstaand contactformulier. </p>",
+            "width": "100%",
+            "max_width": "custom",
+            "max_width_custom": "710",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "contact_form_BrJFwy": {
+          "type": "contact-form",
+          "settings": {
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "custom",
+            "custom_width_mobile": 100,
+            "background_color": "",
+            "input_style": "default",
+            "input_background_color": "{{ settings.color_palette.background }}",
+            "input_text_color": "{{ settings.color_palette.foreground }}",
+            "input_border_color": "{{ settings.color_palette.foreground }}",
+            "border_width": 1,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {
-            "text_pVKNHH": {
-              "type": "text",
-              "name": "Heading",
+            "submit-button": {
+              "type": "contact-form-submit-button",
+              "static": true,
               "settings": {
-                "text": "<h2>Wie is tim?</h2>",
-                "width": "100%",
-                "max_width": "normal",
-                "max_width_custom": "600",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-heading--family)",
-                "font_size": "",
-                "line_height": "display-tight",
-                "letter_spacing": "heading-normal",
-                "case": "uppercase",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_mbfA9X": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Tim (03/01/1981) was papa, lief, zoon, broer, dj, “den board” en vooral een man met een hart dat altijd groter was voor anderen dan voor zichzelf. Eerst de mensen rondom hem, dan pas hijzelf. Zo zat hij in elkaar. <br/><br/>Hij was de liefste papa van Hazel, Magnus en Rover, en de man die met zijn muziek de beste feestjes op gang kon brengen. Met zijn dansplaten kreeg hij iedereen in beweging, altijd met evenveel goesting.<br/><br/>Tim hield van eenvoud. Van het gewone leven. Van “gewuujn wa rapper content zijn”. Hij was gelukkig met kleine dingen.<br/><br/>In augustus 2024 werd hij helaas getroffen door een glioblastoom, een agressieve hersentumor. Na een moedige, maar oneerlijke strijd is hij op 28/12/2025 overleden.<br/><br/>Voor altijd dichterbij dan ooit.</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "max_width_custom": "600",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-primary--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "label": "Verzenden",
+                "style_class": "button-custom",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100,
+                "custom_css": "border-radius: 20px !important;\ntext-transform: uppercase;\npadding: 10px 20px;\nfont-family: var(--gs-font-heading) !important;\nfont-size: 18px;"
               },
               "blocks": {}
             }
           },
-          "block_order": [
-            "text_pVKNHH",
-            "text_mbfA9X"
-          ]
+          "block_order": []
         }
       },
-      "name": "Eenvoud met betekenis",
+      "block_order": [
+        "text_ByVPnP",
+        "text_WEgLbJ",
+        "contact_form_BrJFwy"
+      ],
+      "name": "t:names.contact_form",
       "settings": {
-        "media_position": "left",
-        "media_width": "medium",
-        "media_height": "60svh",
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
         "section_width": "full-width",
-        "extend_media": true,
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
         "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 100,
+        "padding-block-end": 100
       }
     },
     "faq_carousel": {
@@ -156,7 +192,7 @@
           "static": true,
           "settings": {
             "background_color": "",
-            "height": "fill",
+            "height": "fit",
             "position": "top",
             "border": "none",
             "border_width": 1,
@@ -549,7 +585,7 @@
     }
   },
   "order": [
-    "media_with_content_LeJBGk",
+    "section_Kg4yYW",
     "faq_carousel"
   ]
 }
