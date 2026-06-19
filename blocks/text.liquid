@@ -57,14 +57,11 @@
       "default": "normal"
     },
     {
-      "type": "range",
+      "type": "text",
       "id": "max_width_custom",
       "label": "t:settings.custom_width",
-      "min": 100,
-      "max": 1200,
-      "step": 10,
-      "unit": "px",
-      "default": 600,
+      "info": "Pixel value, e.g. 600",
+      "default": "600",
       "visible_if": "{{ block.settings.max_width == 'custom' }}"
     },
     {

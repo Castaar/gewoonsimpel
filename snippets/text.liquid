@@ -64,7 +64,12 @@
 
     --width: {{ text_width }};
     {% if block_settings.max_width == 'custom' %}
-      --max-width: {{ block_settings.max_width_custom }}px;
+      {% assign custom_max_width = block_settings.max_width_custom | strip %}
+      {% if custom_max_width contains 'px' or custom_max_width contains '%' or custom_max_width contains 'rem' or custom_max_width contains 'vw' %}
+        --max-width: {{ custom_max_width }};
+      {% else %}
+        --max-width: {{ custom_max_width }}px;
+      {% endif %}
     {% else %}
       --max-width: var(--max-width--{{ type }}-{{ block_settings.max_width }});
     {% endif %}
