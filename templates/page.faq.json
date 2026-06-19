@@ -109,21 +109,64 @@
     "faq_carousel": {
       "type": "carousel",
       "blocks": {
+        "static-header": {
+          "type": "group",
+          "static": true,
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "static-carousel-content": {
           "type": "_carousel-content",
           "name": "Carousel content",
           "static": true,
           "settings": {
+            "background_color": "",
+            "height": "fit",
             "position": "top",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
+            "border_color": "",
             "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 0,
-            "height": "fit"
+            "padding-inline-end": 0
           },
           "blocks": {
             "faq_card_1": {
@@ -132,11 +175,23 @@
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "flex-start",
                 "gap": 16,
                 "background_media": "none",
                 "background_color": "#000000",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
                 "padding-block-start": 40,
                 "padding-block-end": 40,
                 "padding-inline-start": 32,
@@ -150,12 +205,23 @@
                     "text": "<h3>Wat is Gewoon Simpel?</h3>",
                     "width": "100%",
                     "max_width": "none",
+                    "max_width_custom": "600",
                     "alignment": "left",
                     "type_preset": "h5",
                     "font": "var(--font-heading--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
                     "case": "uppercase",
                     "wrap": "pretty",
-                    "text_color": "{{ settings.color_palette.background }}"
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -166,16 +232,31 @@
                     "text": "<p>Gewoon Simpel VZW is een initiatief van familie van Tim, die enkele maanden geleden overleed aan de gevolgen van hersenkanker. Opgericht om zijn levensfilosofie verder te laten leven en tegelijk iets in beweging te zetten rond hersenkanker. Via betekenisvolle “F*ckt up” good merchandising brengen we zijn boodschap tot bij de mensen: genieten van de eenvoud in het leven en zorg dragen voor elkaar.</p>",
                     "width": "100%",
                     "max_width": "none",
+                    "max_width_custom": "600",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-primary--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
                     "wrap": "pretty",
-                    "text_color": "{{ settings.color_palette.background }}"
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
               },
-              "block_order": ["faq_card_1_heading", "faq_card_1_text"]
+              "block_order": [
+                "faq_card_1_heading",
+                "faq_card_1_text"
+              ]
             },
             "faq_card_2": {
               "type": "_card",
@@ -183,11 +264,23 @@
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "flex-start",
                 "gap": 16,
                 "background_media": "none",
                 "background_color": "#000000",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
                 "padding-block-start": 40,
                 "padding-block-end": 40,
                 "padding-inline-start": 32,
@@ -201,12 +294,23 @@
                     "text": "<h3>Waar gaat de opbrengst naartoe?</h3>",
                     "width": "100%",
                     "max_width": "none",
+                    "max_width_custom": "600",
                     "alignment": "left",
                     "type_preset": "h5",
                     "font": "var(--font-heading--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
                     "case": "uppercase",
                     "wrap": "pretty",
-                    "text_color": "{{ settings.color_palette.background }}"
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -217,16 +321,31 @@
                     "text": "<p>Met de opbrengsten willen we onderzoek naar hersenkanker financieel ondersteunen en het psychosociale welzijn van patiënten en hun omgeving versterken.</p>",
                     "width": "100%",
                     "max_width": "none",
+                    "max_width_custom": "600",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-primary--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
                     "wrap": "pretty",
-                    "text_color": "{{ settings.color_palette.background }}"
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
               },
-              "block_order": ["faq_card_2_heading", "faq_card_2_text"]
+              "block_order": [
+                "faq_card_2_heading",
+                "faq_card_2_text"
+              ]
             },
             "faq_card_3": {
               "type": "_card",
@@ -234,11 +353,23 @@
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "flex-start",
                 "gap": 16,
                 "background_media": "none",
                 "background_color": "#000000",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
                 "padding-block-start": 40,
                 "padding-block-end": 40,
                 "padding-inline-start": 32,
@@ -252,12 +383,23 @@
                     "text": "<h3>Hoe kan ik Gewoon Simpel ondersteunen?</h3>",
                     "width": "100%",
                     "max_width": "none",
+                    "max_width_custom": "600",
                     "alignment": "left",
                     "type_preset": "h5",
                     "font": "var(--font-heading--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
                     "case": "uppercase",
                     "wrap": "pretty",
-                    "text_color": "{{ settings.color_palette.background }}"
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 },
@@ -268,22 +410,130 @@
                     "text": "<p>Dat kan op verschillende manieren:</p><p>- Door merchandise aan te kopen.<br/>- Door onze boodschap te delen met vrienden en familie.<br/>- Door ons te volgen op sociale media.<br/>- Door je eigen verhaal of dat van vrienden te vertellen.</p>",
                     "width": "100%",
                     "max_width": "none",
+                    "max_width_custom": "600",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-primary--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
                     "wrap": "pretty",
-                    "text_color": "{{ settings.color_palette.background }}"
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
               },
-              "block_order": ["faq_card_3_heading", "faq_card_3_text"]
+              "block_order": [
+                "faq_card_3_heading",
+                "faq_card_3_text"
+              ]
+            },
+            "card_fkC7mD": {
+              "type": "_card",
+              "name": "Card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 16,
+                "background_media": "none",
+                "background_color": "#000000",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "aspect_ratio": "adapt",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "padding-block-start": 40,
+                "padding-block-end": 40,
+                "padding-inline-start": 32,
+                "padding-inline-end": 32
+              },
+              "blocks": {
+                "text_4yK3aC": {
+                  "type": "text",
+                  "name": "Heading",
+                  "settings": {
+                    "text": "<h2>Kan ik een bestelling retourneren?</h2>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "max_width_custom": "600",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "uppercase",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_cK6UHh": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "<p>Ja. Indien een product niet voldoet aan je verwachtingen of beschadigd aankomt, neem dan contact met ons op. We bekijken samen een passende oplossing.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "max_width_custom": "600",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_4yK3aC",
+                "text_cK6UHh"
+              ]
             }
           },
-          "block_order": ["faq_card_1", "faq_card_2", "faq_card_3"]
+          "block_order": [
+            "faq_card_1",
+            "faq_card_2",
+            "faq_card_3",
+            "card_fkC7mD"
+          ]
         }
       },
-      "block_order": ["static-carousel-content"],
       "name": "FAQ carousel",
       "settings": {
         "columns": 3,
