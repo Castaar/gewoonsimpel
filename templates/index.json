@@ -43,7 +43,7 @@
         "text_kqg43m"
       ],
       "custom_css": [
-        ".hero-wrapper {margin: 100px auto; max-width: 1240px;}"
+        ".hero-wrapper {margin: 100px auto; max-width: 1240px; width: 100%;}"
       ],
       "name": "Hero",
       "settings": {
