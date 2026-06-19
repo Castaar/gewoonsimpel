@@ -424,7 +424,7 @@
                 "accordion_row_wearmD": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Verzending",
+                    "heading": "Wasvoorschriften",
                     "open_by_default": false,
                     "icon": "none",
                     "width": 20
@@ -433,7 +433,7 @@
                     "text_3Mdx7V": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>We zullen je bestelling zo snel mogelijk verzenden. Zodra je bestelling is verzonden, ontvang je een e-mail met meer informatie. De levertijden zijn afhankelijk van je locatie.</p>",
+                        "text": "<p>{{ closest.product.metafields.custom.care_instructions | metafield_tag }}</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "max_width_custom": "600",
