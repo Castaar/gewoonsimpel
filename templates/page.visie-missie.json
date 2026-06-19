@@ -479,8 +479,8 @@
               "settings": {
                 "text": "<h2>VRAGEN OF WIL JE JE VERHAAL VERTELLEN MET GEWOON SIMPEL VZW?</h2>",
                 "width": "100%",
-                "max_width": "narrow",
-                "max_width_custom": "600",
+                "max_width": "custom",
+                "max_width_custom": "550",
                 "alignment": "left",
                 "type_preset": "h2",
                 "font": "var(--font-heading--family)",
