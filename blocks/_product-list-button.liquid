@@ -146,6 +146,16 @@
       "unit": "%",
       "default": 100,
       "visible_if": "{{ block.settings.width_mobile == \"custom\" }}"
+    },
+    {
+      "type": "header",
+      "content": "Custom CSS"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS",
+      "info": "Declarations only, applied to this button. Example: border-radius: 999px; text-transform: lowercase;"
     }
   ],
   "presets": [

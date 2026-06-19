@@ -32,3 +32,11 @@
 >
   {{ block_settings.label }}
 </a>
+
+{% if block_settings.custom_css != blank %}
+  {% style %}
+    .{{ block_settings.style_class }}--{{ block.id }} {
+      {{ block_settings.custom_css }}
+    }
+  {% endstyle %}
+{% endif %}
