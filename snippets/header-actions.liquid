@@ -178,6 +178,22 @@
     stroke-width: var(--icon-stroke-width, 1.5px);
   }
 
+  /* Fallback rendering: the slotted SVG above can silently fail to paint once
+     assigned across the shopify-account shadow boundary (path occupies a box
+     but draws nothing). Paint the same icon shape via a mask on the exposed
+     ::part() instead, which isn't subject to that slotting issue. */
+  .account-button:not(.account-button--text) shopify-account::part(signed-out-avatar) {
+    background-color: var(--color-account-icon);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 17'%3E%3Cpath fill='none' stroke='black' stroke-linejoin='round' stroke-width='1.5' d='M10.375 3.813a3.063 3.063 0 1 1-6.125 0 3.063 3.063 0 0 1 6.125 0ZM7.313 9.5c-3.667 0-6.24 2.691-6.563 6.125h13.125C13.552 12.191 10.979 9.5 7.312 9.5Z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 17'%3E%3Cpath fill='none' stroke='black' stroke-linejoin='round' stroke-width='1.5' d='M10.375 3.813a3.063 3.063 0 1 1-6.125 0 3.063 3.063 0 0 1 6.125 0ZM7.313 9.5c-3.667 0-6.24 2.691-6.563 6.125h13.125C13.552 12.191 10.979 9.5 7.312 9.5Z'/%3E%3C/svg%3E");
+    -webkit-mask-size: 15px 17px;
+    mask-size: 15px 17px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
+
   shopify-account {
     --shopify-account-font-heading: var(--font-heading--family);
     --shopify-account-font-heading-weight: var(--font-heading--weight);
