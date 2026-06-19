@@ -14,6 +14,42 @@
   "tag": null,
   "settings": [
     {
+      "type": "header",
+      "content": "t:content.layout"
+    },
+    {
+      "type": "select",
+      "id": "max_width",
+      "label": "t:settings.max_width",
+      "options": [
+        {
+          "value": "narrow",
+          "label": "t:options.narrow"
+        },
+        {
+          "value": "normal",
+          "label": "t:options.normal"
+        },
+        {
+          "value": "none",
+          "label": "t:options.none"
+        },
+        {
+          "value": "custom",
+          "label": "t:options.custom"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "text",
+      "id": "max_width_custom",
+      "label": "t:settings.custom_width",
+      "info": "Pixel value, e.g. 600",
+      "default": "600",
+      "visible_if": "{{ block.settings.max_width == 'custom' }}"
+    },
+    {
       "type": "select",
       "id": "type_preset",
       "label": "t:settings.preset",
