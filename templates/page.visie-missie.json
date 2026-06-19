@@ -192,6 +192,7 @@
           "type": "image",
           "name": "t:names.image",
           "settings": {
+            "image": "shopify://shop_images/StanleyStella_EDITO_SS24_TIMELESS_ICONICS2_0__GROUP.jpg",
             "link": "",
             "image_ratio": "custom",
             "custom_image_ratio": "961 / 503",
