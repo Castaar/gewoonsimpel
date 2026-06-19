@@ -165,7 +165,7 @@
 
     <header-menu
       ref="headerMenu"
-      class="header-menu"
+      class="header-menu header-menu--{{ block.id }}"
       {{ block.shopify_attributes }}
       data-hydration-key="header-menu"
     >
@@ -193,6 +193,14 @@
         fetchpriority="low"
       ></script>
     </header-menu>
+
+    {% if block_settings.custom_css != blank %}
+      {% style %}
+        .header-menu--{{ block.id }} {
+          {{ block_settings.custom_css }}
+        }
+      {% endstyle %}
+    {% endif %}
 {% endcase %}
 
 {% style %}
@@ -952,6 +960,16 @@
       "id": "drawer_dividers",
       "label": "t:settings.dividers",
       "default": false
+    },
+    {
+      "type": "header",
+      "content": "Custom CSS"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS",
+      "info": "Declarations only, applied to this menu. Example: gap: 32px; font-style: italic;"
     }
   ]
 }
