@@ -408,6 +408,26 @@
     "product_list_merch": {
       "type": "product-list",
       "blocks": {
+        "button_EazEV7": {
+          "type": "button",
+          "name": "Button",
+          "settings": {
+            "label": "Naar de webshop",
+            "link": "/pages/contact",
+            "open_in_new_tab": false,
+            "style_class": "button-custom",
+            "custom_button_background": "{{ settings.color_palette.foreground }}",
+            "custom_button_text": "{{ settings.color_palette.background }}",
+            "custom_button_border": "{{ settings.color_palette.background }}",
+            "link_text_color": "",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "custom_css": "border-radius: 20px !important;\ntext-transform: uppercase;\npadding: 10px 20px;\nfont-family: var(--gs-font-heading) !important;\nfont-size: 18px;"
+          },
+          "blocks": {}
+        },
         "static-header": {
           "type": "_product-list-content",
           "static": true,
@@ -625,6 +645,9 @@
           ]
         }
       },
+      "block_order": [
+        "button_EazEV7"
+      ],
       "name": "Merchandising",
       "settings": {
         "collection": "all",
