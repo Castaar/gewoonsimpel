@@ -1,0 +1,316 @@
+<!doctype html>
+<html
+  {% if request.design_mode %}
+    class="shopify-design-mode"
+  {% endif %}
+  lang="{{ request.locale.iso_code }}"
+>
+  <head>
+    {%- comment -%} Gewoon Simpel — custom fonts & design tokens {%- endcomment -%}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      /* ── Gewoon Simpel Design Tokens ── */
+      :root {
+        /* Fonts — XD uses BebasKai (headings) & Montserrat (body) */
+        --gs-font-heading: 'Bebas Neue', 'BebasKai', sans-serif;
+        --gs-font-body:    'Montserrat', sans-serif;
+
+        /* Spacing — XD artboard is 1920px, margin 152px each side */
+        --gs-page-margin:  clamp(24px, 7.9vw, 152px);
+
+        /* Font sizes scaled from XD (1920px base) */
+        --gs-hero-size:    clamp(40px, 4.5vw, 86px);   /* XD: 70px hero heading scaled up */
+        --gs-h2-size:      clamp(24px, 2.3vw, 44px);   /* XD: 35px section headings */
+        --gs-h3-size:      clamp(20px, 1.8vw, 35px);
+        --gs-body-size:    clamp(15px, 0.94vw, 18px);  /* XD: 18px body */
+        --gs-nav-size:     clamp(14px, 1.04vw, 20px);  /* XD: 20px nav */
+        --gs-label-size:   clamp(13px, 0.94vw, 18px);  /* XD: 18px button labels */
+        --gs-footer-jumbo: clamp(60px, 12vw, 198px);   /* XD: 198px "GEWOON SIMPEL" */
+        --gs-small-size:   clamp(13px, 0.83vw, 16px);  /* XD: 16px small text */
+
+        /* Section heights from XD (out of 4444px total) */
+        --gs-hero-height:        clamp(480px, 58svh, 780px);  /* hero image ~780px */
+        --gs-split-height:       clamp(380px, 48svh, 485px);  /* split sections ~485px each */
+        --gs-product-card-h:     clamp(300px, 21.6vw, 415px); /* XD product cards 415px tall */
+        --gs-product-card-w:     clamp(260px, 19.9vw, 383px); /* XD: 383px wide */
+
+        /* Gaps & padding */
+        --gs-section-gap:        0px;      /* sections butt up against each other */
+        --gs-product-gap:        clamp(12px, 2.1vw, 40px); /* ~40px gutter between cards */
+        --gs-content-pad:        clamp(24px, 3.1vw, 60px); /* inner content padding */
+      }
+
+      /* ── Override Shopify theme font variables ── */
+      body {
+        font-family: var(--gs-font-body);
+        font-size: var(--gs-body-size);
+      }
+
+      h1, h2, h3, h4, h5, h6,
+      .h1, .h2, .h3, .h4, .h5 {
+        font-family: var(--gs-font-heading) !important;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+
+      /* ── Hero section ── */
+      .hero__content h1,
+      .hero__content .h1 {
+        font-size: var(--gs-hero-size);
+        line-height: 1;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+
+      /* ── Section headings (h2 = 35px in XD) ── */
+      .media-with-content h2,
+      .section h2 {
+        font-size: var(--gs-h2-size);
+        line-height: 1.05;
+        margin-bottom: 16px;
+      }
+
+      /* ── Body text ── */
+      .media-with-content p,
+      .section p {
+        font-family: var(--gs-font-body);
+        font-size: var(--gs-body-size);
+        line-height: 1.65;
+        max-width: 520px;
+      }
+
+      /* ── Split sections: match XD 50/50 layout ── */
+      .media-with-content {
+        min-height: var(--gs-split-height);
+      }
+
+      .media-with-content .media-with-content__content {
+        padding: var(--gs-content-pad) var(--gs-page-margin);
+      }
+
+      /* ── Black section: white text ── */
+      .color-custom-black,
+      [style*="background-color: #000000"] .media-with-content__content,
+      [style*="background:#000"] {
+        color: #ffffff;
+      }
+      [style*="background-color: #000000"] h2,
+      [style*="background-color: #000000"] p {
+        color: #ffffff;
+      }
+
+      /* ── Navigation ── */
+      .header__menu a,
+      .header__menu-item {
+        font-family: var(--gs-font-heading);
+        font-size: var(--gs-nav-size);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      /* ── Buttons ── */
+      .button, .btn, [class*="button"] {
+        font-family: var(--gs-font-heading);
+        font-size: var(--gs-label-size);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border-radius: 0 !important;
+        padding: 10px 20px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      /* ── Product grid ── */
+      .product-list {
+        padding-left: var(--gs-page-margin);
+        padding-right: var(--gs-page-margin);
+      }
+
+      .product-card__title,
+      .product-card [class*="h5"] {
+        font-family: var(--gs-font-body);
+        font-size: var(--gs-body-size);
+        font-weight: 400;
+        text-transform: none;
+      }
+
+      .product-card__price,
+      .price {
+        font-family: var(--gs-font-body);
+        font-size: var(--gs-body-size);
+      }
+
+      /* ── Footer jumbo text ── */
+      .footer-jumbo,
+      .jumbo-text {
+        font-family: var(--gs-font-heading) !important;
+        font-size: var(--gs-footer-jumbo) !important;
+        letter-spacing: -0.02em;
+        line-height: 0.9;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      /* ── Footer body ── */
+      .footer p,
+      .footer address,
+      .footer a {
+        font-family: var(--gs-font-body);
+        font-size: var(--gs-small-size);
+        line-height: 1.6;
+        text-decoration: none;
+      }
+
+      .footer nav a {
+        font-family: var(--gs-font-body);
+        font-weight: 700;
+        font-size: var(--gs-small-size);
+      }
+
+      /* ── Page-width container matches XD 152px margin ── */
+      .section--page-width {
+        padding-left: var(--gs-page-margin) !important;
+        padding-right: var(--gs-page-margin) !important;
+      }
+    </style>
+
+    {%- if settings.favicon != blank -%}
+      <link
+        rel="icon"
+        type="image/png"
+        href="{{ settings.favicon | image_url: width: 32, height: 32 }}"
+      >
+    {%- endif -%}
+
+    {% comment %} This a way to wait for main content to load when navigating to a new page so that the view transitions can work consistently {% endcomment %}
+    {% if settings.transition_to_main_product or settings.page_transition_enabled %}
+      <link
+        rel="expect"
+        href="#MainContent"
+        blocking="render"
+        id="view-transition-render-blocker"
+      >
+    {% endif %}
+
+    {%- render 'meta-tags' -%}
+    {%- render 'stylesheets' -%}
+    {%- render 'fonts' -%}
+    {%- render 'scripts' -%}
+    {%- render 'theme-styles-variables' -%}
+    {%- render 'color-palette' -%}
+
+    {% if request.design_mode %}
+      {%- render 'theme-editor' -%}
+    {% endif %}
+
+    {{ content_for_header }}
+  </head>
+
+  <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
+    {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
+
+    {% render 'chat-drawer' %}
+
+    <div class="page-wrapper">
+      <div id="header-group">
+        {% sections 'header-group' %}
+      </div>
+
+      <script>
+        // Inline header height and menu style calculations to prevent layout shift
+        // Note: Updates in calculateHeaderGroupHeight(), updateTransparentHeaderOffset() and setHeaderMenuStyle() utilities.js should be kept in sync with this function
+        (function setHeaderHeighCustomProperties() {
+          /*
+           * Header calculation functions for maintaining CSS variables
+           * Mimic calculateHeaderGroupHeight() in utilities.js
+           */
+          const header = document.querySelector('header-component');
+          const headerGroup = document.querySelector('#header-group');
+          const hasHeaderSection = headerGroup?.querySelector('.header-section');
+
+          if (!header || !headerGroup) return;
+
+          const headerTopRow = header.querySelector('.header__row--top');
+          const headerHeight = header.offsetHeight;
+
+          // Calculate the total height of the header group
+          let headerGroupHeight = 0;
+          const children = headerGroup.children;
+          for (let i = 0; i < children.length; i++) {
+            const element = children[i];
+            if (element === header || !(element instanceof HTMLElement)) continue;
+            headerGroupHeight += element.offsetHeight;
+          }
+
+          // Check for transparent header special case
+          if (header.hasAttribute('transparent') && header.parentElement?.nextElementSibling) {
+            headerGroupHeight += headerHeight;
+          }
+
+          // Set CSS variables
+          document.body.style.setProperty('--header-height', `${headerHeight}px`);
+          document.body.style.setProperty('--header-group-height', `${headerGroupHeight}px`);
+
+          if (headerTopRow) {
+            window.requestAnimationFrame(function () {
+              document.body.style.setProperty('--top-row-height', `${headerTopRow.offsetHeight}px`);
+            });
+          }
+
+          /**
+           * Updates CSS custom properties for transparent header offset calculation
+           * Mimic updateTransparentHeaderOffset() in utilities.js
+           */
+
+          if (!hasHeaderSection || !header?.hasAttribute('transparent')) {
+            document.body.style.setProperty('--transparent-header-offset-boolean', '0');
+            return;
+          }
+
+          const hasImmediateSection = hasHeaderSection.nextElementSibling?.classList.contains('shopify-section');
+
+          const shouldApplyOffset = !hasImmediateSection ? '1' : '0';
+          document.body.style.setProperty('--transparent-header-offset-boolean', shouldApplyOffset);
+        })();
+
+        (function setHeaderMenuStyle() {
+          const headerComponent = document.querySelector('#header-component');
+          if (headerComponent) {
+            const isTouchDevice = 'ontouchstart' in window && navigator.maxTouchPoints > 0;
+            const overflowList = headerComponent?.querySelector('overflow-list');
+            const hasReachedMinimum = overflowList && overflowList.hasAttribute('minimum-reached');
+            headerComponent.dataset.menuStyle = isTouchDevice || hasReachedMinimum ? 'drawer' : 'menu';
+          }
+        })();
+      </script>
+
+      <main
+        id="MainContent"
+        class="content-for-layout"
+        role="main"
+        data-page-transition-enabled="{{ settings.page_transition_enabled }}"
+        data-product-transition="{{ settings.transition_to_main_product }}"
+        data-template="{{ template }}"
+      >
+        {{ content_for_layout }}
+      </main>
+
+      <footer>
+        {% sections 'footer-group' %}
+      </footer>
+    </div>
+
+    {% render 'cart-drawer', render_wrapper: true %}
+    {% render 'theme-drawer' %}
+
+    {% render 'search-modal' %}
+
+    {% if settings.quick_add or settings.mobile_quick_add %}
+      {% render 'quick-add-modal' %}
+    {% endif %}
+  </body>
+</html>
