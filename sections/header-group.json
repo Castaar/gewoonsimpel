@@ -70,7 +70,7 @@
             "drawer_accordion": false,
             "drawer_accordion_expand_first": false,
             "drawer_dividers": false,
-            "custom_css": "overflow-list {\ndisplay: flex;\ngap: 50px;\n}"
+            "custom_css": ""
           },
           "blocks": {}
         }
