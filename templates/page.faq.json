@@ -582,10 +582,124 @@
         "padding-block-start": 50,
         "padding-block-end": 50
       }
+    },
+    "section_C6BVRb": {
+      "type": "section",
+      "blocks": {
+        "text_JgwB9Q": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Hoe kan ik contact opnemen?</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "max_width_custom": "600",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_nPttHw": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Heb je nog een vraag die hier niet tussen staat? Neem gerust contact met ons op via onze contactpagina. We helpen je graag verder.</p>",
+            "width": "100%",
+            "max_width": "custom",
+            "max_width_custom": "525",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_b69JQ3": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Contacteer ons",
+            "link": "shopify://pages/contact",
+            "open_in_new_tab": false,
+            "style_class": "button-custom",
+            "custom_button_background": "{{ settings.color_palette.foreground }}",
+            "custom_button_text": "{{ settings.color_palette.background }}",
+            "custom_button_border": "{{ settings.color_palette.background }}",
+            "link_text_color": "",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "custom_css": "border-radius: 20px !important;\ntext-transform: uppercase;\npadding: 10px 20px;\nfont-family: var(--gs-font-heading) !important;\nfont-size: 18px;"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_JgwB9Q",
+        "text_nPttHw",
+        "button_b69JQ3"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 50,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
     }
   },
   "order": [
     "section_Kg4yYW",
-    "faq_carousel"
+    "faq_carousel",
+    "section_C6BVRb"
   ]
 }
