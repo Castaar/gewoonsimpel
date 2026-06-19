@@ -16,11 +16,11 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h1>Gewuujn wa rapper content zijn.</h1>",
+            "text": "<h1>Gewuujn simpel</h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
-            "type_preset": "rte",
+            "type_preset": "h1",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -42,9 +42,7 @@
       "block_order": [
         "text_kqg43m"
       ],
-      "custom_css": [
-        ".hero-wrapper {margin: 100px auto; max-width: 1240px; width: 100%;}"
-      ],
+      "custom_css": [],
       "name": "Hero",
       "settings": {
         "media_type_1": "image",
@@ -62,10 +60,10 @@
         "vertical_alignment": "center",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-end",
         "gap": 12,
         "section_width": "page-width",
-        "section_height": "large",
+        "section_height": "medium",
         "section_height_custom": 80,
         "background_color": "#000000",
         "toggle_overlay": false,
@@ -75,7 +73,91 @@
         "blurred_reflection": false,
         "reflection_opacity": 75,
         "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-end": 70
+      }
+    },
+    "section_xKpwbg": {
+      "type": "section",
+      "blocks": {
+        "text_RTwhW7": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Wat begon als het persoonlijke verhaal van Tim en zijn familie, groeide uit tot een VZW die eenvoud en verbondenheid wil vertalen naar concrete acties rond hersenkanker. Dit door gewuujn simpel in het leven te staan en zorg te dragen voor elkaar. </p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_7tCJxA": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Ontdek onze “F*ckt up” good merchandising",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button-custom",
+            "custom_button_background": "{{ settings.color_palette.foreground }}",
+            "custom_button_text": "{{ settings.color_palette.background }}",
+            "custom_button_border": "{{ settings.color_palette.background }}",
+            "link_text_color": "",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "custom_css": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_RTwhW7",
+        "button_7tCJxA"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 50,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 100,
+        "padding-block-end": 100
       }
     },
     "media_with_content_gewoon_simpel": {
@@ -848,6 +930,7 @@
   },
   "order": [
     "hero_main",
+    "section_xKpwbg",
     "media_with_content_gewoon_simpel",
     "media_with_content_eenvoud",
     "media_with_content_verhaal",
