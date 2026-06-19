@@ -70,7 +70,7 @@
             "drawer_accordion": false,
             "drawer_accordion_expand_first": false,
             "drawer_dividers": false,
-            "custom_css": ".menu-list__link-title {\npadding: 0 clamp(0.625rem, -0.6223rem + 2.6019vw, 2.5rem);}\n.header-menu {\nflex: 1;}"
+            "custom_css": ".menu-list__link-title {\npadding: 0 clamp(0.625rem, -0.6223rem + 2.6019vw, 2.5rem);}"
           },
           "blocks": {}
         }
