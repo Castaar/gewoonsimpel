@@ -370,7 +370,7 @@
             "body_verhaal": {
               "type": "text",
               "settings": {
-                "text": "<p>Gewoon Simpel is ontstaan uit het persoonlijke verhaal van Tim en de wens van zijn naaste familie om zijn levensfilosofie te laten verderleven. Wat begon als een manier om betekenis te geven aan verlies, groeide uit tot een VZW die eenvoud, verbondenheid en menselijkheid centraal stelt. Vanuit dat vertrekpunt willen we niet alleen Tim zijn verhaal vertellen, maar ook ruimte creëren voor andere verhalen rond hersenkanker — en de mensen die hiermee in aanraking komen.</p>",
+                "text": "<p>Gewoon Simpel is ontstaan uit het persoonlijke verhaal van Tim en de wens van zijn naaste familie om zijn levensfilosofie te laten verderleven. Wat begon als een manier om betekenis te geven aan verlies, groeide uit tot een VZW die eenvoud, verbondenheid en menselijkheid centraal stelt. Vanuit dat vertrekpunt willen we niet alleen Tim zijn verhaal vertellen, maar ook ruimte creëren voor andere verhalen rond hersenkanker en de mensen die hiermee in aanraking komen. </p>",
                 "width": "100%",
                 "max_width": "narrow",
                 "max_width_custom": "600",
