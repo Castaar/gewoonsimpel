@@ -105,9 +105,201 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "faq_carousel": {
+      "type": "carousel",
+      "blocks": {
+        "static-carousel-content": {
+          "type": "_carousel-content",
+          "name": "Carousel content",
+          "static": true,
+          "settings": {
+            "position": "top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "height": "fit"
+          },
+          "blocks": {
+            "faq_card_1": {
+              "type": "_card",
+              "name": "Card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 16,
+                "background_media": "none",
+                "background_color": "#000000",
+                "padding-block-start": 40,
+                "padding-block-end": 40,
+                "padding-inline-start": 32,
+                "padding-inline-end": 32
+              },
+              "blocks": {
+                "faq_card_1_heading": {
+                  "type": "text",
+                  "name": "Heading",
+                  "settings": {
+                    "text": "<h3>Wat is Gewoon Simpel?</h3>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-heading--family)",
+                    "case": "uppercase",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}"
+                  },
+                  "blocks": {}
+                },
+                "faq_card_1_text": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "<p>Gewoon Simpel VZW is een initiatief van familie van Tim, die enkele maanden geleden overleed aan de gevolgen van hersenkanker. Opgericht om zijn levensfilosofie verder te laten leven en tegelijk iets in beweging te zetten rond hersenkanker. Via betekenisvolle “F*ckt up” good merchandising brengen we zijn boodschap tot bij de mensen: genieten van de eenvoud in het leven en zorg dragen voor elkaar.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-primary--family)",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["faq_card_1_heading", "faq_card_1_text"]
+            },
+            "faq_card_2": {
+              "type": "_card",
+              "name": "Card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 16,
+                "background_media": "none",
+                "background_color": "#000000",
+                "padding-block-start": 40,
+                "padding-block-end": 40,
+                "padding-inline-start": 32,
+                "padding-inline-end": 32
+              },
+              "blocks": {
+                "faq_card_2_heading": {
+                  "type": "text",
+                  "name": "Heading",
+                  "settings": {
+                    "text": "<h3>Waar gaat de opbrengst naartoe?</h3>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-heading--family)",
+                    "case": "uppercase",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}"
+                  },
+                  "blocks": {}
+                },
+                "faq_card_2_text": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "<p>Met de opbrengsten willen we onderzoek naar hersenkanker financieel ondersteunen en het psychosociale welzijn van patiënten en hun omgeving versterken.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-primary--family)",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["faq_card_2_heading", "faq_card_2_text"]
+            },
+            "faq_card_3": {
+              "type": "_card",
+              "name": "Card",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "flex-start",
+                "gap": 16,
+                "background_media": "none",
+                "background_color": "#000000",
+                "padding-block-start": 40,
+                "padding-block-end": 40,
+                "padding-inline-start": 32,
+                "padding-inline-end": 32
+              },
+              "blocks": {
+                "faq_card_3_heading": {
+                  "type": "text",
+                  "name": "Heading",
+                  "settings": {
+                    "text": "<h3>Hoe kan ik Gewoon Simpel ondersteunen?</h3>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-heading--family)",
+                    "case": "uppercase",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}"
+                  },
+                  "blocks": {}
+                },
+                "faq_card_3_text": {
+                  "type": "text",
+                  "name": "Text",
+                  "settings": {
+                    "text": "<p>Dat kan op verschillende manieren:</p><p>- Door merchandise aan te kopen.<br/>- Door onze boodschap te delen met vrienden en familie.<br/>- Door ons te volgen op sociale media.<br/>- Door je eigen verhaal of dat van vrienden te vertellen.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-primary--family)",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["faq_card_3_heading", "faq_card_3_text"]
+            }
+          },
+          "block_order": ["faq_card_1", "faq_card_2", "faq_card_3"]
+        }
+      },
+      "block_order": ["static-carousel-content"],
+      "name": "FAQ carousel",
+      "settings": {
+        "columns": 3,
+        "mobile_columns": "1",
+        "section_width": "page-width",
+        "columns_gap": 24,
+        "background_color": "",
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
     }
   },
   "order": [
-    "media_with_content_LeJBGk"
+    "media_with_content_LeJBGk",
+    "faq_carousel"
   ]
 }
