@@ -40,8 +40,8 @@
               "settings": {
                 "text": "<h1>Onze “F*ckt up” good merchandising</h1>",
                 "width": "100%",
-                "max_width": "normal",
-                "max_width_custom": "600",
+                "max_width": "custom",
+                "max_width_custom": "410",
                 "alignment": "left",
                 "type_preset": "h1",
                 "font": "var(--font-heading--family)",
