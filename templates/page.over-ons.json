@@ -141,6 +141,117 @@
         "padding-block-end": 100
       }
     },
+    "media_with_content_z3tYEj": {
+      "type": "media-with-content",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "link": "",
+            "video_loop": true,
+            "video_autoplay": false,
+            "image_position": "cover",
+            "video_position": "cover"
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 24
+          },
+          "blocks": {
+            "text_wkPxtf": {
+              "type": "text",
+              "settings": {
+                "text": "<p>We willen deze vorm van kanker dan ook meer onder de aandacht brengen via “F*ckt up” good merchandising, geïnspireerd op hoe Tim in het leven stond: “gewuujn simpel” en “meer op den bosj leven”. Naast het financieel ondersteunen van hoognodig onderzoek, willen we gericht het psychosociale welzijn van neuropatiënten en hun dichte omgeving trachten te versterken tijdens het ziekteproces. <br/><br/>We willen daarbij niet alleen Tim zijn verhaal vertellen, maar ook ruimte creëren voor andere verhalen rond hersenkanker en de mensen die ermee in aanraking komen.</p>",
+                "width": "100%",
+                "max_width": "narrow",
+                "max_width_custom": "600",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_Qpb83j": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "label": "Meer over onze missie & visie",
+                "link": "shopify://pages/visie-missie",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100,
+                "custom_css": "border-radius: 20px !important;\ntext-transform: uppercase;\npadding: 10px 20px;\nfont-family: var(--gs-font-heading) !important;\nfont-size: 18px;"
+              },
+              "blocks": {}
+            },
+            "button_7qDFg4": {
+              "type": "button",
+              "name": "Button",
+              "settings": {
+                "label": "Ontdek onze “F*ckt up\" good merchandising",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "custom_button_text": "{{ settings.color_palette.background }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100,
+                "custom_css": "border-radius: 20px !important;\ntext-transform: uppercase;\npadding: 10px 20px;\nfont-family: var(--gs-font-heading) !important;\nfont-size: 18px;"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_wkPxtf",
+            "button_Qpb83j",
+            "button_7qDFg4"
+          ]
+        }
+      },
+      "name": "Gewoon Simpel intro",
+      "settings": {
+        "media_position": "right",
+        "media_width": "medium",
+        "media_height": "60svh",
+        "section_width": "full-width",
+        "extend_media": true,
+        "background_color": "#ffffff",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "section_cTt9hE": {
       "type": "section",
       "blocks": {
@@ -413,6 +524,7 @@
   "order": [
     "hero_main",
     "section_xKpwbg",
+    "media_with_content_z3tYEj",
     "section_cTt9hE",
     "section_UUH6dM",
     "section_8rzF3b"
