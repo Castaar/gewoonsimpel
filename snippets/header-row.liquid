@@ -12,6 +12,7 @@
   @param {string} [localization] - Captured HTML for language/country selector
   @param {string} [search] - Captured HTML for search input
   @param {string} [drawer_search] - Captured HTML for drawer-based search
+  @param {string} [menu_right] - Captured HTML for the secondary menu navigation, always rendered in the right column
 {% enddoc %}
 
 {%- liquid
@@ -32,6 +33,8 @@
 
     case item
       when 'actions'
+        assign item_column = 'right'
+      when 'menu_right'
         assign item_column = 'right'
     endcase
 
@@ -78,6 +81,8 @@
               {{ logo }}
             {% when 'menu' %}
               {{ menu }}
+            {% when 'menu_right' %}
+              {{ menu_right }}
             {% when 'localization' %}
               {{ localization }}
             {% when 'search' %}

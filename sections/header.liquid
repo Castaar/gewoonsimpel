@@ -1,8 +1,8 @@
 {% liquid
-  assign order = 'logo,menu,localization,search,drawer_search,actions'
+  assign order = 'logo,menu,localization,search,drawer_search,menu_right,actions'
 
   if shop.customer_accounts_enabled
-    assign order = 'drawer_search,logo,menu,localization,search,actions'
+    assign order = 'drawer_search,logo,menu,localization,search,menu_right,actions'
   endif
 
   assign rows = 'top,bottom' | split: ','
@@ -86,6 +86,10 @@
     content_for 'block', type: '_header-menu', id: 'header-menu'
   endcapture
 
+  capture menu_right
+    content_for 'block', type: '_header-menu', id: 'header-menu-right'
+  endcapture
+
   capture drawer_menu
     content_for 'block', type: '_header-menu', id: 'header-menu', variant: 'mobile'
   endcapture
@@ -110,23 +114,23 @@
   if section.settings.localization_position == 'left'
     if section.settings.search_position == 'left'
       if shop.customer_accounts_enabled
-        assign order = 'drawer_search,logo,search,localization,menu,actions'
+        assign order = 'drawer_search,logo,search,localization,menu,menu_right,actions'
       else
-        assign order = 'logo,search,localization,menu,drawer_search,actions'
+        assign order = 'logo,search,localization,menu,drawer_search,menu_right,actions'
       endif
     else
       if shop.customer_accounts_enabled
-        assign order = 'drawer_search,logo,localization,menu,search,actions'
+        assign order = 'drawer_search,logo,localization,menu,search,menu_right,actions'
       else
-        assign order = 'logo,localization,menu,search,drawer_search,actions'
+        assign order = 'logo,localization,menu,search,drawer_search,menu_right,actions'
       endif
     endif
   else
     if section.settings.search_position == 'left'
       if shop.customer_accounts_enabled
-        assign order = 'drawer_search,logo,search,menu,localization,actions'
+        assign order = 'drawer_search,logo,search,menu,localization,menu_right,actions'
       else
-        assign order = 'logo,search,menu,localization,drawer_search,actions'
+        assign order = 'logo,search,menu,localization,drawer_search,menu_right,actions'
       endif
     endif
   endif
@@ -436,6 +440,7 @@
         first: first,
         logo: logo,
         menu: menu,
+        menu_right: menu_right,
         actions: actions,
         localization: localization_markup,
         search: search,
