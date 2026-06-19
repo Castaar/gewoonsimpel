@@ -17,6 +17,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/StanleyStella_EDITO_SS24_TIMELESS_ICONICS2_0__GROUP.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
