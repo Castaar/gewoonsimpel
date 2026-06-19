@@ -44,7 +44,8 @@
             "text_color_navigation_bar": "",
             "drawer_accordion": false,
             "drawer_accordion_expand_first": false,
-            "drawer_dividers": false
+            "drawer_dividers": false,
+            "custom_css": ""
           },
           "blocks": {}
         },
@@ -68,7 +69,8 @@
             "text_color_navigation_bar": "",
             "drawer_accordion": false,
             "drawer_accordion_expand_first": false,
-            "drawer_dividers": false
+            "drawer_dividers": false,
+            "custom_css": "display: flex;\ngap: 50px;"
           },
           "blocks": {}
         }
