@@ -86,8 +86,8 @@
           "settings": {
             "text": "<p>Wat begon als het persoonlijke verhaal van Tim en zijn familie, groeide uit tot een VZW die eenvoud en verbondenheid wil vertalen naar concrete acties rond hersenkanker. Dit door gewuujn simpel in het leven te staan en zorg te dragen voor elkaar. </p>",
             "width": "fit-content",
-            "max_width": "normal",
-            "max_width_custom": "600",
+            "max_width": "custom",
+            "max_width_custom": "800",
             "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
