@@ -465,7 +465,7 @@
               "type": "_product-list-text",
               "name": "Title",
               "settings": {
-                "text": "<h3>ONZE \"F*CKT UP\" GOOD MERCHANDISING</h3>",
+                "text": "<h2>ONZE \"F*CKT UP\" GOOD MERCHANDISING</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
