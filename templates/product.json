@@ -243,7 +243,7 @@
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 32,
-                "width": "custom",
+                "width": "fill",
                 "custom_width": 80,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
@@ -265,7 +265,7 @@
                 "link": "",
                 "open_in_new_tab": false,
                 "placeholder": "",
-                "padding-block-start": 32,
+                "padding-block-start": 30,
                 "padding-block-end": 32,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
