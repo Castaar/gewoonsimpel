@@ -48,10 +48,10 @@
       {% endif %}
       {{ block.shopify_attributes }}
     >
-      <summary class="menu__heading{% if heading == blank and menu.title == blank %} menu__heading--empty{% endif %} {{ block_settings.heading_preset }}">
-        <span class="menu__heading__default">{{ heading | default: menu.title }}</span>
+      <summary class="menu__heading{% if heading == blank %} menu__heading--empty{% endif %} {{ block_settings.heading_preset }}">
+        <span class="menu__heading__default">{{ heading }}</span>
         <span class="menu__heading__accordion">
-          {{ heading | default: menu.title }}
+          {{ heading }}
           {% if block_settings.accordion_icon == 'plus' %}
             <span class="menu__heading__toggle svg-wrapper icon-plus">
               {{- 'icon-plus.svg' | inline_asset_content -}}
@@ -71,7 +71,10 @@
         {% endif %}
       >
         {% if menu %}
-          <ul class="list-unstyled">
+          <ul
+            class="list-unstyled menu__list--{{ block.id }}"
+            style="{% if block_settings.link_font_weight != blank %}--menu-link-font-weight: {{ block_settings.link_font_weight }};{% endif %}"
+          >
             {% for link in menu.links %}
               <li class="menu__item {{ block_settings.link_preset }}">
                 <a href="{{ link.url }}">
@@ -105,6 +108,10 @@
 
   .menu__item + .menu__item {
     margin-block-start: var(--spacing--size);
+  }
+
+  [class*="menu__list--"] .menu__item a {
+    font-weight: var(--menu-link-font-weight, inherit);
   }
 
   .menu .menu__heading--empty {
@@ -306,6 +313,38 @@
         }
       ],
       "default": "paragraph"
+    },
+    {
+      "type": "select",
+      "id": "link_font_weight",
+      "label": "t:settings.link_font_weight",
+      "options": [
+        {
+          "value": "",
+          "label": "t:options.default"
+        },
+        {
+          "value": "400",
+          "label": "t:options.regular"
+        },
+        {
+          "value": "500",
+          "label": "t:options.medium"
+        },
+        {
+          "value": "600",
+          "label": "t:options.semibold"
+        },
+        {
+          "value": "700",
+          "label": "t:options.bold"
+        },
+        {
+          "value": "800",
+          "label": "t:options.extrabold"
+        }
+      ],
+      "default": ""
     },
     {
       "type": "header",
