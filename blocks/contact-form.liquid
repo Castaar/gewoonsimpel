@@ -63,7 +63,8 @@
         for="ContactForm-name"
       >
         {{- 'blocks.contact_form.name' | t -}}
-      </label>
+        <span aria-hidden="true">*</span></label
+      >
       <input
         type="text"
         id="ContactForm-name"
@@ -71,7 +72,49 @@
         autocomplete="name"
         name="contact[name]"
         value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-        placeholder="{{ 'blocks.contact_form.name' | t }}"
+        required
+        aria-required="true"
+        placeholder="{{ 'blocks.contact_form.name' | t }}*"
+      >
+
+      <label
+        class="visually-hidden"
+        for="ContactForm-first-name"
+      >
+        {{- 'blocks.contact_form.first_name' | t -}}
+        <span aria-hidden="true">*</span></label
+      >
+      <input
+        type="text"
+        id="ContactForm-first-name"
+        class="contact-form__input"
+        autocomplete="given-name"
+        name="contact[{{ 'blocks.contact_form.first_name' | t }}]"
+        required
+        aria-required="true"
+        placeholder="{{ 'blocks.contact_form.first_name' | t }}*"
+      >
+    </div>
+
+    <div class="contact-form__form-row">
+      <label
+        class="visually-hidden"
+        for="ContactForm-phone"
+      >
+        {{- 'blocks.contact_form.phone' | t -}}
+        <span aria-hidden="true">*</span></label
+      >
+      <input
+        type="tel"
+        id="ContactForm-phone"
+        class="contact-form__input"
+        autocomplete="tel"
+        name="contact[phone]"
+        pattern="[0-9\-]*"
+        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+        required
+        aria-required="true"
+        placeholder="{{ 'blocks.contact_form.phone' | t }}*"
       >
 
       <label
@@ -90,44 +133,31 @@
         spellcheck="false"
         autocapitalize="off"
         value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+        required
         aria-required="true"
         {% if form.errors contains 'email' and form_matches %}
           aria-invalid="true"
           aria-describedby="ContactForm-email-error"
         {% endif %}
-        placeholder="{{ 'blocks.contact_form.email' | t }}"
+        placeholder="{{ 'blocks.contact_form.email' | t }}*"
       >
     </div>
-
-    <label
-      class="visually-hidden"
-      for="ContactForm-phone"
-    >
-      {{- 'blocks.contact_form.phone' | t -}}
-    </label>
-    <input
-      type="tel"
-      id="ContactForm-phone"
-      class="contact-form__input"
-      autocomplete="tel"
-      name="contact[phone]"
-      pattern="[0-9\-]*"
-      value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-      placeholder="{{ 'blocks.contact_form.phone' | t }}"
-    >
 
     <label
       class="visually-hidden"
       for="ContactForm-body"
     >
       {{- 'blocks.contact_form.comment' | t -}}
-    </label>
+      <span aria-hidden="true">*</span></label
+    >
     <textarea
       rows="10"
       id="ContactForm-body"
       class="contact-form__input contact-form__input--textarea"
       name="contact[body]"
-      placeholder="{{ 'blocks.contact_form.comment' | t }}"
+      required
+      aria-required="true"
+      placeholder="{{ 'blocks.contact_form.comment' | t }}*"
     >
       {{- form.body -}}
     </textarea>
@@ -164,6 +194,17 @@
     border-radius: var(--style-border-radius-inputs);
     border: var(--style-border-width-inputs) solid var(--color-input-border);
     -webkit-font-smoothing: antialiased;
+    font-family: var(--gs-font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .contact-form__input::placeholder {
+    font-family: var(--gs-font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--color-input-text);
+    opacity: 1;
   }
 
   .contact-form__input--textarea {

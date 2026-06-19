@@ -11,9 +11,10 @@
     "payment_methods": "Betaalmethoden",
     "contact_form": {
       "name": "Naam",
-      "email": "E-mail",
+      "first_name": "Voornaam",
+      "email": "E-mailadres",
       "phone": "Telefoonnummer",
-      "comment": "Reactie",
+      "comment": "Bericht",
       "post_success": "Bedankt dat je contact met ons hebt opgenomen. Je hoort zo snel mogelijk van ons.",
       "error_heading": "Pas het volgende aan:"
     },
