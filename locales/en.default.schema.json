@@ -858,6 +858,7 @@
     "custom_mobile_size": "Custom mobile size",
     "custom_mobile_width": "Custom mobile width",
     "custom_width": "Custom width",
+    "custom_aspect_ratio": "Custom aspect ratio",
     "custom_liquid": "Liquid code",
     // Primary color scheme option, not specialized variants
     "default": "Default",

@@ -11,6 +11,8 @@
       assign ratio = '4 / 5'
     when 'adapt'
       assign ratio = block_settings.image.aspect_ratio
+    when 'custom'
+      assign ratio = block_settings.custom_image_ratio | strip
   endcase
 
   if ratio == 0 or ratio == null
@@ -151,9 +153,21 @@
         {
           "value": "landscape",
           "label": "t:options.landscape"
+        },
+        {
+          "value": "custom",
+          "label": "t:options.custom"
         }
       ],
       "default": "adapt"
+    },
+    {
+      "type": "text",
+      "id": "custom_image_ratio",
+      "label": "t:settings.custom_aspect_ratio",
+      "info": "e.g. 16 / 9 or 1.5",
+      "default": "1 / 1",
+      "visible_if": "{{ block.settings.image_ratio == 'custom' }}"
     },
     {
       "type": "select",
@@ -232,7 +246,7 @@
         }
       ],
       "default": "fit",
-      "visible_if": "{{ block.settings.image_ratio == 'adapt' }}"
+      "visible_if": "{{ block.settings.image_ratio == 'adapt' or block.settings.image_ratio == 'custom' }}"
     },
     {
       "type": "header",
