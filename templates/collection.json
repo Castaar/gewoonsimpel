@@ -6,9 +6,10 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
-    "media_with_content_pezPEP": {
+    "media_with_content_gpHFDe": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -16,6 +17,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "link": "",
             "video_loop": true,
             "video_autoplay": false,
             "image_position": "cover",
@@ -27,26 +29,28 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 24
           },
           "blocks": {
-            "text_g6QEFa": {
+            "text_WLYGXc": {
               "type": "text",
-              "name": "Title",
+              "name": "Heading",
               "settings": {
-                "text": "<h1>{{ closest.collection.title }}</h1>",
-                "width": "fit-content",
+                "text": "<h1>Onze “F*ckt up” good merchandising</h1>",
+                "width": "100%",
                 "max_width": "normal",
+                "max_width_custom": "600",
                 "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-primary--family)",
+                "type_preset": "h1",
+                "font": "var(--font-heading--family)",
                 "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
+                "line_height": "display-tight",
+                "letter_spacing": "heading-normal",
+                "case": "uppercase",
                 "wrap": "pretty",
+                "text_color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -57,13 +61,13 @@
               },
               "blocks": {}
             },
-            "text_VVCJrR": {
+            "text_qapVBD": {
               "type": "text",
-              "name": "Description",
               "settings": {
-                "text": "{{ closest.collection.description }}",
-                "width": "fit-content",
-                "max_width": "narrow",
+                "text": "<p>Ontdek onze “F*ckt up” good merchandise en draag bij aan onderzoek naar hersenkanker en het psychosociale welzijn van patiënten en hun omgeving.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "max_width_custom": "600",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-primary--family)",
@@ -72,6 +76,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
+                "text_color": "",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -84,19 +89,19 @@
             }
           },
           "block_order": [
-            "text_g6QEFa",
-            "text_VVCJrR"
+            "text_WLYGXc",
+            "text_qapVBD"
           ]
         }
       },
-      "name": "t:names.media_with_text",
+      "name": "Eenvoud met betekenis",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
-        "media_height": "50svh",
+        "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "background_color": "{{ settings.color_palette.color2 }}",
+        "background_color": "{{ settings.color_palette.foreground }}",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -116,6 +121,8 @@
             "show_filter_label": false,
             "enable_sorting": true,
             "enable_grid_density": true,
+            "background_color": "",
+            "text_color": "",
             "padding-block-start": 8,
             "padding-block-end": 8,
             "padding-inline-start": 0,
@@ -130,9 +137,11 @@
           "static": true,
           "settings": {
             "product_card_gap": 12,
+            "background_color": "",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
+            "border_color": "",
             "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
@@ -147,6 +156,7 @@
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
+                "border_color": "",
                 "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -173,16 +183,19 @@
                 "height": "fit",
                 "custom_height": 100,
                 "background_media": "none",
+                "background_color": "",
                 "video_position": "cover",
                 "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "link": "",
                 "open_in_new_tab": false,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -196,6 +209,7 @@
                     "text": "<h4>{{ closest.product.title }}</h4>",
                     "width": "100%",
                     "max_width": "normal",
+                    "max_width_custom": "600",
                     "alignment": "left",
                     "type_preset": "h5",
                     "font": "var(--font-primary--family)",
@@ -204,6 +218,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
+                    "text_color": "",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -228,6 +243,7 @@
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
+                    "text_color": "",
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -266,6 +282,8 @@
         "layout_type": "grid",
         "product_card_size": "medium",
         "mobile_product_card_size": "small",
+        "enable_infinite_scroll": true,
+        "products_per_page": 24,
         "product_grid_width": "centered",
         "full_width_on_mobile": true,
         "columns_gap_horizontal": 16,
@@ -279,7 +297,7 @@
     }
   },
   "order": [
-    "media_with_content_pezPEP",
+    "media_with_content_gpHFDe",
     "main"
   ]
 }
