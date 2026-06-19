@@ -63,7 +63,11 @@
     {% endif %}
 
     --width: {{ text_width }};
-    --max-width: var(--max-width--{{ type }}-{{ block_settings.max_width }});
+    {% if block_settings.max_width == 'custom' %}
+      --max-width: {{ block_settings.max_width_custom }}px;
+    {% else %}
+      --max-width: var(--max-width--{{ type }}-{{ block_settings.max_width }});
+    {% endif %}
     {% if text_width == "100%" %}
       --text-align: {{ block_settings.alignment }};
     {% endif %}
