@@ -281,6 +281,7 @@
                     "text_color": "",
                     "heading_preset": "h3",
                     "link_preset": "paragraph",
+                    "link_font_weight": "700",
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
