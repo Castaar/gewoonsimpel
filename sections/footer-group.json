@@ -411,6 +411,25 @@
           },
           "blocks": {}
         },
+        "policy_list": {
+          "type": "footer-policy-list",
+          "settings": {
+            "text_color": "",
+            "font_size": "0.75rem",
+            "case": "none"
+          },
+          "blocks": {}
+        },
+        "credit": {
+          "type": "footer-credit",
+          "settings": {
+            "link": "",
+            "text_color": "",
+            "font_size": "0.75rem",
+            "case": "none"
+          },
+          "blocks": {}
+        },
         "social_icons": {
           "type": "social-links",
           "settings": {
@@ -434,6 +453,8 @@
       },
       "block_order": [
         "copyright",
+        "policy_list",
+        "credit",
         "social_icons"
       ],
       "settings": {
