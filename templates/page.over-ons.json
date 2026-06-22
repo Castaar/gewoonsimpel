@@ -197,7 +197,7 @@
               "name": "Button",
               "settings": {
                 "label": "Meer over onze missie & visie",
-                "link": "shopify://pages/visie-missie",
+                "link": "shopify://pages/missie-visie",
                 "open_in_new_tab": false,
                 "style_class": "button-custom",
                 "custom_button_background": "{{ settings.color_palette.foreground }}",
