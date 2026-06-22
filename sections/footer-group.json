@@ -401,21 +401,20 @@
     "utilities": {
       "type": "footer-utilities",
       "blocks": {
-        "footer_credit_WnAYeU": {
-          "type": "footer-credit",
-          "name": "Credit",
+        "copyright": {
+          "type": "footer-copyright",
           "settings": {
-            "link": "",
+            "show_powered_by": false,
             "text_color": "",
             "font_size": "0.75rem",
             "case": "none"
           },
           "blocks": {}
         },
-        "copyright": {
-          "type": "footer-copyright",
+        "footer_policy_list_FGFtyQ": {
+          "type": "footer-policy-list",
+          "name": "t:names.policy_list",
           "settings": {
-            "show_powered_by": false,
             "text_color": "",
             "font_size": "0.75rem",
             "case": "none"
@@ -441,12 +440,24 @@
             "custom_url": ""
           },
           "blocks": {}
+        },
+        "footer_credit_WnAYeU": {
+          "type": "footer-credit",
+          "name": "Credit",
+          "settings": {
+            "link": "",
+            "text_color": "",
+            "font_size": "0.75rem",
+            "case": "none"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "footer_credit_WnAYeU",
         "copyright",
-        "social_icons"
+        "footer_policy_list_FGFtyQ",
+        "social_icons",
+        "footer_credit_WnAYeU"
       ],
       "settings": {
         "section_width": "page-width",
