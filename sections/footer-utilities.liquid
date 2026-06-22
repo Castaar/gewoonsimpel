@@ -94,6 +94,22 @@
       justify-self: end;
       text-align: right;
     }
+
+    /* 4 blocks: Four equal columns, start/center/center/end aligned */
+    .utilities--blocks-4 {
+      grid-template-columns: 1fr auto auto 1fr;
+    }
+
+    .utilities--blocks-4 > *:nth-child(2),
+    .utilities--blocks-4 > *:nth-child(3) {
+      justify-self: center;
+      text-align: center;
+    }
+
+    .utilities--blocks-4 > *:nth-child(4) {
+      justify-self: end;
+      text-align: right;
+    }
   }
 {% endstylesheet %}
 
@@ -102,7 +118,7 @@
   "name": "t:names.policies_and_links",
   "tag": "div",
   "class": "footer-utilities",
-  "max_blocks": 3,
+  "max_blocks": 4,
   "enabled_on": {
     "groups": ["footer"]
   },
@@ -186,6 +202,9 @@
     },
     {
       "type": "footer-policy-list"
+    },
+    {
+      "type": "footer-credit"
     },
     {
       "type": "social-links"
