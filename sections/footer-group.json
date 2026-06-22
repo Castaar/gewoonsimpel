@@ -244,7 +244,7 @@
                 "text_TgcTP8": {
                   "type": "text",
                   "settings": {
-                    "text": "<p><a href=\"https://maps.app.goo.gl/p1jBqmrcpMDZVCTS7\" target=\"_blank\" title=\"https://maps.app.goo.gl/p1jBqmrcpMDZVCTS7\">Gentsestraat 11<br/>9420 Burst    </a><br/><br/>BE1038535745</p>",
+                    "text": "<p><a href=\"https://maps.app.goo.gl/p1jBqmrcpMDZVCTS7\" target=\"_blank\" title=\"https://maps.app.goo.gl/p1jBqmrcpMDZVCTS7\">Gentsestraat 11<br/>9420 Burst</a><br/><br/>BE1038535745</p>",
                     "width": "100%",
                     "max_width": "narrow",
                     "max_width_custom": "600",
