@@ -208,7 +208,34 @@
               "type": "text",
               "name": "Product description",
               "settings": {
-                "text": "{{ closest.product.description }}",
+                "text": "<p><strong>Let op: pre-order</strong> </p><p>Levertermijn:<strong>4 tot 6 weken</strong>. Betaling wordt nu verwerkt, levering volgt zodra het product beschikbaar is.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "max_width_custom": "600",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 20,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_r7TxYJ": {
+              "type": "text",
+              "name": "Product description",
+              "settings": {
+                "text": "<p>{{ closest.product.description }}</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "max_width_custom": "600",
@@ -298,6 +325,7 @@
                   "settings": {
                     "stacking": false,
                     "text_color": "",
+                    "pre_order_ready_date": "",
                     "show_pickup_availability": false,
                     "gift_card_form": true,
                     "recipient_button_style": "default",
@@ -512,6 +540,7 @@
           "block_order": [
             "group_4we3XL",
             "text_LbbLqQ",
+            "text_r7TxYJ",
             "group_dTHcXb",
             "accordion_gyfDGG"
           ]
