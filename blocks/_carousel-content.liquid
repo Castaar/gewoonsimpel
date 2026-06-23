@@ -89,7 +89,19 @@
   }
 
   .carousel-content slideshow-arrows {
+    position: static;
+    inset: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--gap-xs);
     padding-inline: var(--util-page-margin-offset);
+    padding-block-end: var(--padding-md);
+    mix-blend-mode: normal;
+  }
+
+  .carousel-content slideshow-arrows .slideshow-control {
+    opacity: 1;
+    color: var(--color-foreground);
   }
 
   .carousel-content .slideshow-control--next {
