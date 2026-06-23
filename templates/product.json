@@ -189,8 +189,8 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "text_color": "{{ settings.color_palette.foreground }}",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 20,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -208,7 +208,7 @@
               "type": "text",
               "name": "Product description",
               "settings": {
-                "text": "<p><strong>Let op: pre-order</strong> </p><p>Levertermijn:<strong>4 tot 6 weken</strong>. Betaling wordt nu verwerkt, levering volgt zodra het product beschikbaar is.</p>",
+                "text": "<p><strong>Let op: pre-order</strong> </p><p>Levertermijn: <strong>4 tot 6 weken</strong>. Betaling wordt nu verwerkt, levering volgt zodra het product beschikbaar is.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "max_width_custom": "600",
