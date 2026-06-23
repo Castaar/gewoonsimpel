@@ -395,7 +395,7 @@
                 "icon": "caret",
                 "dividers": true,
                 "divider_color": "",
-                "type_preset": "h6",
+                "type_preset": "",
                 "background_color": "",
                 "text_color": "",
                 "border": "none",
