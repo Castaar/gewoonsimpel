@@ -206,6 +206,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/Gewoon_Simpel-124_websize.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
