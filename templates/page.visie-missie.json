@@ -47,7 +47,7 @@
       "name": "Hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Gewoon_Simpel-81_websize.jpg",
+        "image_1": "shopify://shop_images/Gewoon_Simpel-72.jpg",
         "media_type_2": "none",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -169,7 +169,7 @@
           "type": "image",
           "name": "t:names.image",
           "settings": {
-            "image": "shopify://shop_images/StanleyStella_EDITO_SS24_TIMELESS_ICONICS2_0__GROUP.jpg",
+            "image": "shopify://shop_images/Gewoon_Simpel-112.jpg",
             "link": "",
             "image_ratio": "custom",
             "custom_image_ratio": "961 / 503",
@@ -194,7 +194,7 @@
           "type": "image",
           "name": "t:names.image",
           "settings": {
-            "image": "shopify://shop_images/StanleyStella_EDITO_SS24_TIMELESS_ICONICS2_0__GROUP.jpg",
+            "image": "shopify://shop_images/Gewoon_Simpel-59.jpg",
             "link": "",
             "image_ratio": "custom",
             "custom_image_ratio": "961 / 503",
@@ -349,7 +349,7 @@
           "type": "image",
           "name": "t:names.image",
           "settings": {
-            "image": "shopify://shop_images/StanleyStella_EDITO_SS24_TIMELESS_ICONICS2_0__GROUP.jpg",
+            "image": "shopify://shop_images/Gewoon_Simpel-25.jpg",
             "link": "",
             "image_ratio": "custom",
             "custom_image_ratio": "961 / 503",
@@ -374,7 +374,7 @@
           "type": "image",
           "name": "t:names.image",
           "settings": {
-            "image": "shopify://shop_images/StanleyStella_EDITO_SS24_TIMELESS_ICONICS2_0__GROUP.jpg",
+            "image": "shopify://shop_images/Gewoon_Simpel-30.jpg",
             "link": "",
             "image_ratio": "custom",
             "custom_image_ratio": "961 / 503",
