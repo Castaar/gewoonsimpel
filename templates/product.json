@@ -461,7 +461,7 @@
                     "text_3Mdx7V": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>{{ closest.product.metafields.custom.care_instructions | metafield_tag }}</p>",
+                        "text": "<p>Kleuren met dezelfde tinten samen wassen, niet strijken op bedrukkingen, binnenstebuiten wassen en strijken.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "max_width_custom": "600",
