@@ -498,25 +498,24 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_yrMjXR": {
-                      "type": "text",
+                    "image_cUWX8L": {
+                      "type": "image",
+                      "name": "t:names.image",
                       "settings": {
-                        "text": "{{ closest.product.metafields.custom.size_guide | metafield_tag }}",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "max_width_custom": "600",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
+                        "image": "{{ closest.product.metafields.custom.sizeguide.value }}",
+                        "link": "",
+                        "image_ratio": "adapt",
+                        "custom_image_ratio": "1 / 1",
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fit",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_color": "",
+                        "border_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -526,7 +525,7 @@
                     }
                   },
                   "block_order": [
-                    "text_yrMjXR"
+                    "image_cUWX8L"
                   ]
                 }
               },
