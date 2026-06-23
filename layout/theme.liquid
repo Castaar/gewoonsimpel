@@ -200,6 +200,11 @@
     {%- render 'fonts' -%}
     {%- render 'scripts' -%}
     {%- render 'theme-styles-variables' -%}
+    <style>
+      :root {
+        --font-size--h1: clamp(1.75rem, 0.9185rem + 1.7346vw, 3rem);
+      }
+    </style>
     {%- render 'color-palette' -%}
 
     {% if request.design_mode %}
