@@ -90,8 +90,11 @@
     content_for 'block', type: '_header-menu', id: 'header-menu-right'
   endcapture
 
+  assign menu_right_block = section.blocks | where: 'id', 'header-menu-right' | first
+  assign menu_right_linklist = menu_right_block.settings.menu
+
   capture drawer_menu
-    content_for 'block', type: '_header-menu', id: 'header-menu', variant: 'mobile'
+    content_for 'block', type: '_header-menu', id: 'header-menu', variant: 'mobile', secondary_menu: menu_right_linklist
   endcapture
 
   capture navigation_left
