@@ -17,7 +17,7 @@
     section_id: block.id
   %}
   {%- liquid
-    assign menu_class = 'menu'
+    assign menu_class = 'menu menu--' | append: block.id
     if show_as_accordion == true
       assign menu_class = menu_class | append: ' menu--accordion'
     endif
@@ -95,6 +95,14 @@
     disable_on_mobile: should_disable_on_mobile,
     open_by_default_on_mobile: should_open_by_default_on_mobile
   %}
+{% endif %}
+
+{% if block_settings.custom_css != blank %}
+  {% style %}
+    .menu--{{ block.id }} {
+      {{ block_settings.custom_css }}
+    }
+  {% endstyle %}
 {% endif %}
 
 {% stylesheet %}
@@ -345,6 +353,16 @@
         }
       ],
       "default": ""
+    },
+    {
+      "type": "header",
+      "content": "Custom CSS"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS",
+      "info": "Scoped to this menu. Write plain declarations (width: fit-content;) or nested rules (.menu__details { ... }) ."
     },
     {
       "type": "header",
