@@ -425,7 +425,7 @@
           "type": "social-links",
           "settings": {
             "icon_color": "{{ settings.color_palette.background }}",
-            "facebook_url": "https://www.facebook.com",
+            "facebook_url": "https://www.facebook.com/profile.php?id=61591307484711",
             "instagram_url": "https://www.instagram.com",
             "youtube_url": "",
             "tiktok_url": "",
