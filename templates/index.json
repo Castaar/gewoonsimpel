@@ -44,7 +44,8 @@
         "text_kqg43m"
       ],
       "custom_css": [
-        ".hero-wrapper {padding: 100px calc(40px + clamp(24px, 7.9vw, 152px)); width: 100%;}"
+        ".hero-wrapper {padding: 100px calc(40px + clamp(24px, 7.9vw, 152px)); width: 100%;}",
+        "@media (max-width: 767px) {.hero-wrapper {padding: 40px; }}"
       ],
       "name": "Hero",
       "settings": {
