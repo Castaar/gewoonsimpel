@@ -238,6 +238,12 @@
             can_add_to_cart: can_add_to_cart,
             form_obj: form
           %}
+
+          {% if is_pre_order and block_settings.pre_order_ready_date != blank %}
+            <p class="pre-order-ready-date">
+              {{ block_settings.pre_order_ready_date }}
+            </p>
+          {% endif %}
         </div>
         {%- if block_settings.gift_card_form and product.gift_card? -%}
           </span>
@@ -387,6 +393,14 @@
 
 {% render 'buy-buttons-styles' %}
 
+{% stylesheet %}
+  .pre-order-ready-date {
+    margin-block-start: var(--margin-xs);
+    font-size: 0.875rem;
+    color: var(--color-foreground-muted);
+  }
+{% endstylesheet %}
+
 {% schema %}
 {
   "name": "t:names.product_buy_buttons",
@@ -403,6 +417,16 @@
       "id": "text_color",
       "label": "t:settings.text_color",
       "placeholder": "t:settings.default"
+    },
+    {
+      "type": "header",
+      "content": "Pre-order"
+    },
+    {
+      "type": "text",
+      "id": "pre_order_ready_date",
+      "label": "Pre-order ready date",
+      "info": "Shown under the button when this product is a pre-order (continue selling, 0 stock). E.g. \"Verwacht klaar: eind juli\"."
     },
     {
       "type": "header",
