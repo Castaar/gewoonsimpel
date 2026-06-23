@@ -437,7 +437,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Onze missie</h2>",
+            "text": "<h2>Onze visie</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "max_width_custom": "600",
@@ -464,7 +464,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Gewoon Simpel VZW zet zich in om onderzoek naar hersenkanker in België te ondersteunen. Daarnaast is ook het psychosociale welzijn van neuropatiënten en hun naaste omgeving een belangrijke pijler. <br/><br/>Hoe? Via betekenisvolle “F*ckt up” good merchandising die vertrekt vanuit Tim zijn levensfilosofie.  </p>",
+            "text": "<p>We willen hersenkanker meer zichtbaar en bespreekbaar maken. Eenvoudig, eerlijk en verbonden. Vanuit Tim zijn gedachte “gewuujn simpel” streven we naar een wereld waarin mensen meer in het moment leven en zorg dragen voor elkaae. Daarnaast willen we ook ruimte creeëren voor andere gelijkaardige verhalen naast dat van Tim.</p>",
             "width": "100%",
             "max_width": "custom",
             "max_width_custom": "800",
