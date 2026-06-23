@@ -429,6 +429,98 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "section_GYTVNh": {
+      "type": "section",
+      "blocks": {
+        "text_VQtWmr": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Onze missie</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "max_width_custom": "600",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_cPEdzG": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Gewoon Simpel VZW zet zich in om onderzoek naar hersenkanker in België te ondersteunen. Daarnaast is ook het psychosociale welzijn van neuropatiënten en hun naaste omgeving een belangrijke pijler. <br/><br/>Hoe? Via betekenisvolle “F*ckt up” good merchandising die vertrekt vanuit Tim zijn levensfilosofie.  </p>",
+            "width": "100%",
+            "max_width": "custom",
+            "max_width_custom": "800",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_VQtWmr",
+        "text_cPEdzG"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 20,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
     }
   },
   "order": [
@@ -436,6 +528,7 @@
     "section_xKpwbg",
     "section_cTt9hE",
     "section_UUH6dM",
-    "section_8rzF3b"
+    "section_8rzF3b",
+    "section_GYTVNh"
   ]
 }
