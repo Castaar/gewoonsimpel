@@ -314,7 +314,7 @@
                     "custom_selected_variant_border": "{{ settings.color_palette.foreground }}",
                     "alignment": "left",
                     "padding-block-start": 0,
-                    "padding-block-end": 0,
+                    "padding-block-end": 40,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
