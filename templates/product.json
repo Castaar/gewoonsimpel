@@ -208,7 +208,7 @@
               "type": "text",
               "name": "Product description",
               "settings": {
-                "text": "<p><strong>Let op: pre-order</strong> </p><p>Levertermijn: <strong>4 tot 6 weken</strong>. Betaling wordt nu verwerkt, levering volgt zodra het product beschikbaar is.</p>",
+                "text": "<p><strong>Let op: pre-order</strong> </p><p>Levertermijn: <strong>2 tot 4 weken</strong>. Betaling wordt nu verwerkt, levering volgt zodra het product beschikbaar is.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "max_width_custom": "600",
