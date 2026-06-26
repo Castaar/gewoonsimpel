@@ -2000,6 +2000,11 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 
 .buy-buttons-block {
   height: auto !important;
+  padding: 0 !important;
+}
+
+.product-form-buttons {
+  height: auto !important;
 }
 
 .variant-option + .variant-option {
