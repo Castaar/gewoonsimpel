@@ -445,7 +445,7 @@
           "name": "Button",
           "settings": {
             "label": "Naar de webshop",
-            "link": "/pages/contact",
+            "link": "shopify://collections",
             "open_in_new_tab": false,
             "style_class": "button-custom",
             "custom_button_background": "{{ settings.color_palette.foreground }}",
